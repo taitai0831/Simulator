@@ -141,10 +141,6 @@ $button.on('click', function(){
                         $gest.toggleClass('gest-go2'); 
                     }
               },2000);
-              gatestate = false;
-              lapstate = false;
-              lockstate = false;
-              state();
               setTimeout(function(){
                   $('.vehicle').toggleClass('active');
                   $('.button').css('background-color','red');
