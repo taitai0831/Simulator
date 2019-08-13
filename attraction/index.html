@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <meta name="description" content="Attraction operation simulator">
+    <meta name="author" content="taitai0831">
+    <title>Attraction</title>
+</head>
+<body>
+    <div class="content">
+        <div class="head">
+            <div class="station">
+                <div class="orbit">
+                    <div class="vehicle"><div class="gest2"></div></div>
+                </div>
+                <div class="gate"><p class="gate-text">CLOSE</p></div>
+                <br>
+                <div class="gest"></div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="display">
+                <table class="table" border="1px solid black">
+                    <tr>
+                        <th>STATUSE</th><th class="state">NO</th>
+                    </tr>
+                    <tr>
+                        <td>LAP</td><td class="lap-dis">UNLOCK</td>
+                    </tr>
+                    <tr>
+                        <td>GATE</td><td class="gate-dis">CLOSE</td>
+                    </tr>
+                    <tr>
+                        <td>DISPATCH</td><td class="dis-dis">LOCK</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="control">
+                <table>
+                    <tr>
+                        <th>Gate</th><th>Dispatch</th><th>Unlock</th><th>Lapber</th>
+                    </tr>
+                    <tr>
+                        <td><button class="gate-lock" type="button" value="gate"></button></td><td><button class="button" type="button" value="ボタン"></button></td><td><button class="lock" type="button" value="lock"></button></td><td><button class="lap" type="button" value="lap"></button></td>
+                    </tr>
+                </table>
+            </div>
+            <audio id='sound' preload="auto"><source src="BELL.mp3" type="audio/mp3"></audio>
+            <footer><p>©️ 2019 <a href="https://twitter.com/taitai0831">taitai0831</a></p><a href="use.html"><p>How to use</p></a></footer>
+        </div>
+    </div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

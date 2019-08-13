@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+}
+
+hr {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.station {
+    width: 90%;
+    height: 20vw;
+    margin: 0px auto;
+    margin-top: 5vw;
+}
+
+.body {
+    margin-top: 8vw;
+    width: 90%;
+    height: 11vw;
+    margin: 0px auto;
+}
+
+button {
+    border-radius: 50%;
+    height: 5vw;
+    width: 5vw;
+    margin: 2vw;
+    font-size: 1vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.control {
+    border-radius: 5vw;
+    border: 0.8px solid black;
+    width: 38vw;
+    margin: auto;
+    background-color: #EEEEEE;
+}
+
+.table {
+    margin: 0 auto;
+}
+
+.lap {
+    background-color: chartreuse;
+}
+
+.lock {
+    background-color: chartreuse;
+}
+
+.button {
+    background-color: red;
+}
+
+.gate-lock {
+    background-color: #ff8c00;
+}
+
+
+#dis {
+    margin: 0px auto;
+}
+
+.vehicle {
+    width: 18vw;
+    height: 6vw;
+    background-color: black;
+    transition: all 2s 0s ease;
+}
+
+.active {
+  transform: translateX(70vw);
+}
+
+
+.gate {
+    margin-top: 3vw;
+    width: 13vw;
+    height: 3.5vw;
+    border: 1px solid;
+    background-color: red;
+}
+
+.gate-text {
+    margin-top: 1vw;
+    text-align: center;
+}
+
+.gest {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    transition: all 2s 0s ease;
+}
+
+.gest2 {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    display: none;
+    transition: all 2s 0s ease;
+}
+
+.gest2-go {
+    display: inline-block;
+}
+
+.gest-go2 {
+    display: none;
+}
+
+.gest-go {
+  transform: translateY(-14.3vw);
+}
+
+.table {
+    width: 30vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.lap-dis {
+    background-color: chartreuse;
+}
+
+.dis-dis {
+    background-color: red;
+}
+
+.gate-dis {
+    background-color: red;
+}
+
+.state {
+    background-color: red;
+}
+
+footer {
+    text-align: center;
+}
