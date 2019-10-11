@@ -1,3 +1,4 @@
+//HTML要素
 var $vehicle = $('.vehicle');
 var $button = $('.button');
 var $lock = $('.lock');
@@ -5,21 +6,25 @@ var $gate = $('.gate-lock');
 var $gest = $('.gest');
 var $lap = $('.lap');
 
+//チェック
 var dis = false;
 var gate = false;
 var lap = false;
 
+//ステータスチェック
 var gatestate = false;
 var lapstate = false;
 var lockstate = false;
 
+//ゲートチェック
 var gestck = false;
 
-
+//出発音
 function bell() {
    document.getElementById("sound").play(); 
 }
 
+//ステータス画面
 function state() {
     if(gatestate === true) {
         if(lapstate === true) {
@@ -40,6 +45,7 @@ function state() {
     };
 }
 
+//ディスパッチ
 function disdis() {
     if(dis === false) {
         $('.dis-dis').text('LOCK');
@@ -51,6 +57,7 @@ function disdis() {
     }
 }
 
+//ラップ
 function lapdis() {
     if(lap === false) {
         $('.lap-dis').text('UNLOCK');
@@ -61,6 +68,7 @@ function lapdis() {
     }
 }
 
+//ゲート
 function gatedis() {
     if(gate === false) {
         $('.gate-dis').text('CLOSE');
