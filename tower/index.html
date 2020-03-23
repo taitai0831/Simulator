@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <meta name="description" content="Attraction operation simulator">
+    <meta name="author" content="taitai0831">
+    <title>Attraction</title>
+</head>
+<body>
+    <div class="content">
+        <div class="head">
+            <h1 id="alert"></h1>
+            <table border="1" id="operationstatus">
+                <tbody>
+                    <tr><th>Gate</th><th>Dispacth</th><th>Lock</th></tr>
+                    <tr><td class="gate-dis">Gate Close</td><td class="dis-dis">Dispatch Disabled</td><td class="lock-dis">Disabled</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="station">
+            <div class="hatch"><div class="guest-2"></div><div class="door"></div></div>
+            <div class="guest"></div>
+        </div>
+        <div class="occ">
+            <table id="occ">
+                <tbody>
+                    <tr><th id="gate-h">Gate</th><th id="dispatch-h">Dispatch</th><th id="lock-h">Lock</th><th id="e-stop-h">E-STOP</th></tr>
+                    <tr><td id="gate"><button type="button" class="gate" value="gate"></button></td><td id="dispacth"><button class="dis" type="button" value="dispatch"></button></td><td id="lock"><button type="button" class="lock" value="lock"></button></td><td id="e-stop"><button type="button" class="estop" value="estop"></button></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<audio id='sound' preload="auto"><source src="start.mp3" type="audio/mp3"></audio>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
