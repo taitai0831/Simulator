@@ -1,2 +1,0 @@
-# Attraction
- Attraction operation simulator
