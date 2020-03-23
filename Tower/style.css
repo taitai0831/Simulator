@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+}
+
+.head h1 {
+    font-size: 2.5vw;
+    text-align: center;
+    color: red;
+}
+
+.head table {
+    margin: 0px auto;
+}
+
+#operationstatus {
+    margin-top: 5vh;
+}
+
+#alert {
+    font-size: 2vw;
+    text-align: center;
+    color: red;
+}
+
+.station {
+    margin: 0px auto;
+    margin-top: 1vh;
+    width: 20vw;
+    height: 58vh;
+    border: 1px solid #000000;
+}
+
+
+.hatch {
+    display: block;
+    margin: 0px auto;
+    margin-top: 40vh;
+    width: 4vw;
+    height: 12vh;
+    border: 1px solid #000000;
+}
+
+.hatch-go {
+    transform: translateY(-6vw);
+}
+
+.door {
+    margin: 0px auto;
+    width: 2px;
+    height: 12vh;
+    background-color: #000000;
+}
+
+.guest {
+    border-radius: 50%;
+    height: 1.5vw;
+    width: 1.5vw;
+    margin: 0px auto;
+    margin-top: 1vh;
+    font-size: 1vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background-color: aqua;
+    transition: all 2s 0s ease;
+}
+
+.guest-go {
+    transform: translateY(-6.7vw);
+}
+
+.guest-2 {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    border-radius: 50%;
+    height: 1.5vw;
+    width: 1.5vw;
+    font-size: 1vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background-color: gray;
+    opacity: 0.7;
+    transition: all 2s 0s ease;
+}
+
+.occ {
+    margin: 0px auto;
+    margin-top: 3vh;
+    width: 45vw;
+    height: 22vh;
+    border-radius: 5vw;
+    border: 0.8px solid black;
+}
+
+.occ table {
+    margin: 0px auto;
+    width: 5vw;
+    height: 5vh;
+}
+
+#e-stop {
+    background-color: yellow;
+    border-radius: 50%;
+    font-size: 2vw;
+}
+
+#gate {
+    background-color: silver;
+    border-radius: 50%;
+    font-size: 2vw; 
+}
+
+#lock {
+    background-color: silver;
+    border-radius: 50%;
+    font-size: 2vw;   
+}
+
+#dispacth {
+    background-color: silver;
+    border-radius: 50%;
+    font-size: 2vw;   
+}
+
+button {
+    border-radius: 50%;
+    height: 4.5vw;
+    width: 4.5vw;
+    margin: 2vw;
+    font-size: 1vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.gate {
+    background-color: coral;
+}
+
+.dis {
+    background-color: red;
+}
+
+.lock {
+    background-color: chartreuse;
+}
+
+.estop {
+    background-color: red;
+}
+
+.gate-dis {
+    background-color: chartreuse;
+}
+
+.dis-dis {
+    background-color: yellow;
+}
+
+.lock-dis {
+    background-color: yellow;
+}
