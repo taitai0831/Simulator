@@ -113,6 +113,7 @@ $lock.on('click', function(){
             $dis.css('background-color', 'chartreuse');
             $('.lock').css('background-color', 'cadetblue');
             $('.lock-dis').css('background-color', 'chartreuse');
+            $('.lock-dis').text('Lock Enabled');
             dis = true;
             lockstate = true;
         }
