@@ -61,6 +61,7 @@ function reset() {
     $('.guest').css('display', 'block');
     $('.guest-2').css('display', 'none');
     $('.lock').css('background-color', 'chartreuse');
+    $('.dis').css('background-color', 'red');
 }
 
 $estop.on('click', function(){
