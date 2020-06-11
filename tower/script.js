@@ -127,43 +127,51 @@ $lock.on('click', function(){
 $dis.on('click', function(){
     if(dis === true) {
         if(lockstate === true) {
-            bell();
-            setTimeout(function(){
+            if(gate === false) {
+                bell();
+                setTimeout(function(){
+                    if(estop === true) {
+                        return false;
+                    }
+                    $hatch.animate({
+                        marginTop: '-=40vh'
+                    }, 3000).animate({
+                        marginTop: '+=40vh'
+                    }, 1000);    
+                },1000);
+                setTimeout(function(){
+                    if(estop === true) {
+                        return false;
+                    }
+                    $hatch.animate({
+                        marginTop: '-=40vh'
+                    }, 3000).animate({
+                        marginTop: '+=40vh'
+                    }, 1000);    
+                },6000);
+                setTimeout(function(){
+                    if(estop === true) {
+                        return false;
+                    }
+                    $hatch.animate({
+                        marginTop: '-=40vh'
+                    }, 3000).animate({
+                        marginTop: '+=40vh'
+                    }, 1000);  
+                },11000);
+                setTimeout(function(){
                 if(estop === true) {
                     return false;
                 }
-                $hatch.animate({
-                    marginTop: '-=40vh'
-                }, 3000).animate({
-                    marginTop: '+=40vh'
-                }, 1000);    
-            },1000);
-            setTimeout(function(){
-                if(estop === true) {
-                    return false;
-                }
-                $hatch.animate({
-                    marginTop: '-=40vh'
-                }, 3000).animate({
-                    marginTop: '+=40vh'
-                }, 1000);    
-            },6000);
-            setTimeout(function(){
-                if(estop === true) {
-                    return false;
-                }
-                $hatch.animate({
-                    marginTop: '-=40vh'
-                }, 3000).animate({
-                    marginTop: '+=40vh'
-                }, 1000);  
-            },11000);
-            setTimeout(function(){
-            if(estop === true) {
+                    reset();
+                },16000);
+            } else {
+                window.alert("Gate is open");
                 return false;
             }
-                reset();
-            },16000);
+        } else {
+            window.alert("Not Locked");
+            return false;
         }
     } else {
         window.alert("OPERATION MISS");
