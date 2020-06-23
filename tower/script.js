@@ -18,6 +18,7 @@ var lockstate = false;
 
 var guestck = false;
 
+var disblocker = false;
 function bell() {
    document.getElementById("sound").play(); 
 }
@@ -43,6 +44,7 @@ function state() {
 }
 
 function reset() {
+    disblocker = false;
     dis = false;
     gate = false;
     estop = false;
@@ -128,43 +130,48 @@ $dis.on('click', function(){
     if(dis === true) {
         if(lockstate === true) {
             if(gate === false) {
-                bell();
-                setTimeout(function(){
+                if (disblocker === false) {
+                    disblocker = true;
+                    bell();
+                    setTimeout(function(){
+                        if(estop === true) {
+                            return false;
+                        }
+                        $hatch.animate({
+                            marginTop: '-=40vh'
+                        }, 3000).animate({
+                            marginTop: '+=40vh'
+                        }, 1000);    
+                    },1000);
+                    setTimeout(function(){
+                        if(estop === true) {
+                            return false;
+                        }
+                        $hatch.animate({
+                            marginTop: '-=40vh'
+                        }, 3000).animate({
+                            marginTop: '+=40vh'
+                        }, 1000);    
+                    },6000);
+                    setTimeout(function(){
+                        if(estop === true) {
+                            return false;
+                        }
+                        $hatch.animate({
+                            marginTop: '-=40vh'
+                        }, 3000).animate({
+                            marginTop: '+=40vh'
+                        }, 1000);  
+                    },11000);
+                    setTimeout(function(){
                     if(estop === true) {
                         return false;
                     }
-                    $hatch.animate({
-                        marginTop: '-=40vh'
-                    }, 3000).animate({
-                        marginTop: '+=40vh'
-                    }, 1000);    
-                },1000);
-                setTimeout(function(){
-                    if(estop === true) {
-                        return false;
-                    }
-                    $hatch.animate({
-                        marginTop: '-=40vh'
-                    }, 3000).animate({
-                        marginTop: '+=40vh'
-                    }, 1000);    
-                },6000);
-                setTimeout(function(){
-                    if(estop === true) {
-                        return false;
-                    }
-                    $hatch.animate({
-                        marginTop: '-=40vh'
-                    }, 3000).animate({
-                        marginTop: '+=40vh'
-                    }, 1000);  
-                },11000);
-                setTimeout(function(){
-                if(estop === true) {
-                    return false;
+                        reset();
+                    },16000);
+                } else {
+                    window.alert("Already Dispatch");
                 }
-                    reset();
-                },16000);
             } else {
                 window.alert("Gate is open");
                 return false;
