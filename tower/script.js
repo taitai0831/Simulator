@@ -185,4 +185,12 @@ $dis.on('click', function(){
     }
 });
 
+function screenck(){
+    var screen = window.orientation;
 
+    if (screen === 0) {
+        window.alert("横画面で操作してください")
+  }
+};
+
+window.onload = screenck();
