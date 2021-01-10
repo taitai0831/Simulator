@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+}
+
+.dis-count {
+	text-align: center;
+    background-color: orange;
+}
+
+.head h1 {
+    font-size: 2.5vw;
+    text-align: center;
+    color: red;
+}
+
+.head table {
+    margin: 0px auto;
+}
+
+#operationstatus {
+    margin-top: 5vh;
+}
+
+#alert {
+    font-size: 2vw;
+    text-align: center;
+    color: red;
+}
+
+.station {
+    margin: 0px auto;
+    margin-top: 1vh;
+    width: 80vw;
+    height: 74vh;
+    border: 1px solid #000000;
+}
+
+.door {
+    position: absolute;
+    width: 2vw;
+    height: 20vh;
+    border: 1px solid #000000;
+    z-index: 0
+}
+
+.occ-1 {
+    position: absolute;
+    z-index: 0;
+    width: 2vw;
+    height: 2vw;
+    margin-top: 61vh;
+    margin-left: 12vw;
+    border: 1px solid black;
+}
+
+
+.occdis {
+    position: absolute;
+    z-index: 0;
+    background-color: silver;
+    width: 0.8vw;
+    height: 100%;
+    margin-left: 1.2vw;
+}
+
+#counter {
+    position: absolute;
+    z-index: 0;
+    font-size: 12px;
+}
+
+.cast {
+    position: absolute;
+    z-index: 0;
+    margin-top: 61vh;
+    margin-left: 10vw;
+    border-radius: 50%;
+    height: 1.5vw;
+    width: 1.5vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background-color: blueviolet;
+}
+
+.shotgate {
+    margin: 0px auto;
+    margin-top: 61vh;
+    border: 1px solid black;
+    width: 50vw;
+    height: 4vh;
+}
+
+.border {
+    margin: 0px auto;
+    margin-top: 1.5vh;
+    width: 50vw;
+    height: 2px;
+    background-color: #000000;
+    
+}
+
+.vehicle-1 {
+    margin: 5vw;
+    margin-top: 48vh;
+    margin-left: 23vw;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    float: left;
+    transition: all 5s 0s ease;
+}
+
+.vehicle-2 {
+    margin: 5vw;
+    margin-top: 48vh;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    float: left;
+    transition: all 6s 0s ease;
+}
+
+.vehicle-3 {
+    margin: 5vw;
+    margin-top: 48vh;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    float: left;
+    transition: all 7s 0s ease;
+}
+
+
+
+.hatch-go {
+    transform: translateY(-6vw);
+}
+
+.guest-1 {
+    margin-top: 66vh;
+    margin-left: -41vw;
+    border-radius: 50%;
+    height: 1.5vw;
+    width: 1.5vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background-color: aqua;
+    transition: all 2s 0s ease;
+    float: left;
+}
+
+.guest-2 {
+    margin-top: 66vh;
+    margin-left: -25vw;
+    border-radius: 50%;
+    height: 1.5vw;
+    width: 1.5vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background-color: aqua;
+    transition: all 2s 0s ease;
+    float: left;
+}
+
+.guest-3 {
+    margin-top: 66vh;
+    margin-left: -9vw;
+    border-radius: 50%;
+    height: 1.5vw;
+    width: 1.5vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background-color: aqua;
+    transition: all 2s 0s ease;
+    float: left;
+}
+
+.guest-1-2 {
+    margin-top: 5vh;
+    margin-left: 2.3vw;
+    border-radius: 50%;
+    height: 1.5vw;
+    width: 1.5vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background-color: darkgray;
+    transition: all 2s 0s ease;
+    float: left;
+    display: none;
+}
+
+.guest-2-2 {
+    margin-top: 5vh;
+    margin-left: 2.3vw;
+    border-radius: 50%;
+    height: 1.5vw;
+    width: 1.5vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background-color: darkgray;
+    transition: all 2s 0s ease;
+    float: left;
+    display: none;
+}
+
+.guest-3-2 {
+    margin-top: 5vh;
+    margin-left: 2.3vw;
+    border-radius: 50%;
+    height: 1.5vw;
+    width: 1.5vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background-color: darkgray;
+    transition: all 2s 0s ease;
+    float: left;
+    display: none;
+}
+
+.guest-go {
+    transform: translateY(-6.8vw);
+}
+
+.vehicle-go-1 {
+    transform: translateY(-24vw);
+}
+
+.vehicle-go-2 {
+    margin-left: -23vw;
+}
+
+/*.guest-2 {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    border-radius: 50%;
+    height: 1.5vw;
+    width: 1.5vw;
+    font-size: 1vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background-color: gray;
+    opacity: 0.7;
+    transition: all 2s 0s ease;
+}*/
+
+.occ {
+    margin: 0px auto;
+    margin-top: 3vh;
+    width: 45vw;
+    height: 22vh;
+    border-radius: 5vw;
+    border: 0.8px solid black;
+}
+
+.occ table {
+    margin: 0px auto;
+    width: 5vw;
+    height: 5vh;
+}
+
+#e-stop {
+    background-color: yellow;
+    border-radius: 50%;
+    font-size: 2vw;
+}
+
+#gate {
+    background-color: silver;
+    border-radius: 50%;
+    font-size: 2vw; 
+}
+
+#lock {
+    background-color: silver;
+    border-radius: 50%;
+    font-size: 2vw;   
+}
+
+#dispacth {
+    background-color: silver;
+    border-radius: 50%;
+    font-size: 2vw;   
+}
+
+button {
+    border-radius: 50%;
+    height: 4.5vw;
+    width: 4.5vw;
+    margin: 2vw;
+    font-size: 1vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.gate {
+    background-color: coral;
+}
+
+.dis {
+    background-color: red;
+}
+
+.lock {
+    background-color: chartreuse;
+}
+
+.estop {
+    background-color: red;
+}
+
+.gate-dis {
+    background-color: chartreuse;
+}
+
+.dis-dis {
+    background-color: yellow;
+}
+
+.lock-dis {
+    background-color: yellow;
+}
