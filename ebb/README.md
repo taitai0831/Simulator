@@ -1,2 +1,2 @@
-# Attraction
- Attraction operation simulator
+# EBB
+ EBB operation simulator
